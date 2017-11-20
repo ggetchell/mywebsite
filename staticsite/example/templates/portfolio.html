@@ -1,0 +1,91 @@
+{% extends 'baseportfolio.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+	<meta charset="UTF-8">
+		<TITLE>My Web Portfolio Web Site</title>
+    <meta name="description" content="My second Web Page: Created from Capella Course">
+	<meta name="author"	content="Gregory Getchell">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+<body> 
+    {% block pagecontent %}
+<div class="header">
+    <h1>My Portfolio Page</h1>
+        </div>
+<div class="container1">
+    <div class="row">
+<p id="below-section" class="section-subheading text-muted">Below you'll find some of my recent work on Codepen.io as well as other programming sites.
+  <br /> Additional projects to be added at a later time.      
+        </p>
+        </div>
+    </div>
+		<div class="container">
+        <div class="row">
+            <div class="col-md-3"><a href="https://github.com/ggetchell/Scientific-Calculator" target="_blank"><img src="../static/images/sci-calc.jpg" class="img-responsive" alt="Scientific Calculator"></a><p>Javascript Calculator</p>
+            </div>
+            <div class="col-md-3"><a href="https://github.com/ggetchell/The-Hitchhikers-Guide-Quotes" target="_blank"><img src="../static/images/randomquote.jpg" class="img-responsive" alt="Hitchhikers Guide to the Galaxy"></a><p>Hitchhikers Guide</p>
+            </div>
+            <div class="col-md-3"><a href="https://github.com/ggetchell/Pomodoro-Countdown-Timer" target="_blank"><img src="../static/images/pomodoro.jpg" class="img-responsive" alt="Countdown Timer"></a><p>Countdown Timer</p>
+            </div>
+			<div class="col-md-3"><a href="https://github.com/ggetchell/Twitch-TV-JSON-API" target="_blank"><img src="../static/images/Twitch.tv%20Viewer.jpg" class="img-responsive" alt="Twitch TV"></a><p>Twitch TV</p>
+            </div>
+            </div>
+            
+            <div class="row">
+                    <div class="col-md-3"><a href="https://github.com/ggetchell/Google-Homepage" target="_blank"><img src="../static/images/Googlehomepage.jpg" class="img-responsive" alt="Google Homepage"></a><p>Google Homepage</p>
+                    </div>
+                    <div class="col-md-3"><a href="https://github.com/ggetchell/Simon-Says-Game" target="_blank"><img src="../static/images/Simonsays.jpg" class="img-responsive" alt="Simon Says"></a><p>Simon Says Game</p>
+                    </div>
+                    <div class="col-md-3"><a href="https://github.com/ggetchell/Wikipedia-Viewer" target="_blank"><img src="../static/images/Wikiviewer.jpg" class="img-responsive" alt="Wikipedia Viewer"></a><p>Wikipedia Viewer</p>
+                    </div>
+                    <div class="col-md-3"><a href="https://github.com/ggetchell/Personal-Profile-Webpage" target="_blank"><img src="../static/images/web-portfolio.jpg" class="img-responsive" alt="Web Page"></a><p>First Website</p>
+                </div></div>
+        
+        <div class="row">
+            <div class="col-md-3"><a href="https://github.com/ggetchell/Etch-a-sketch" target="_blank"><img src="../static/images/etch-a-sketch.png" class="img-responsive" alt="
+                Etch-a-Sketch"></a><p>Etch-a-Sketch</p></div>
+            <div class="col-md-3"><a href="https://github.com/ggetchell/jQueryBadgesProject" target="_blank"><img src="../static/images/jQueryBadgesProject.png" class="img-responsive" alt="Jquery Badges"></a><p>Jquery Badges Project</p></div>
+            <div class="col-md-3"><a href="https://github.com/ggetchell/Animated-Android" target="_blank"><img src="../static/images/Animated-Android.png" class="img-responsive" alt="Animated Android" ></a><p>Animated Android</p></div>
+            <div class="col-md-3"><a href="https://github.com/ggetchell/Animated-Scenery" target="_blank"><img src="../static/images/Animated-Scenery.png" class="img-responsive" alt="Animated Scenery"></a><p>Animated Scenery</p>
+            </div>
+            </div>
+            
+		<div class="row">
+            <div class="col-md-3"><a href="https://github.com/ggetchell/React-Universal-Blog" target="_blank"><img src="../static/images/react-universal-blog.png" class="img-responsive" alt="React Univ Blog"></a><p>React Universal Blog</p></div>
+            <div class="col-md-3"><a href="https://github.com/ggetchell/Simple-Tic-Tac-Toe-Game.git" target="_blank"><img src="../static/images/tictactoe.jpg" class="img-responsive" alt="Simple Tic-Tac-Toe"</a><p>Simple Tic-Tac-Toe</p></div>
+            <div class="col-md-3"><a href="https://github.com/ggetchell/2D-Knockout.git" target="_blank"><img src="../static/images/2D-Knockout.png" class="img-responsive" alt="2D-Knockout Game"></a><p>2D-Knockout Game</p></div>
+    </div>
+</div>
+<div class="footer">
+<small>&copy; 2016 by Gregory Getchell all rights reserved</small>
+    <div id="share-buttons" class="pull-center"> 
+    <a href="http://www.linkedin.com/in/greg-getchell-a133217" target="_blank">
+        <img src="../static/images/linkedin.png" alt="LinkedIn" />
+    </a>
+    <a href="https://plus.google.com/u/0/115066865000810445323" target="_blank">
+        <img src="../static/images/googleplus.png" alt="Google" />
+    </a>
+       
+    <a href="http://www.facebook.com/gregory.getchell" target="_blank">
+    <img src="../static/images/facebook500.png" alt="Facebook" />
+    </a>
+    <a href="https://twitter.com/ggetchell4" target="_blank">
+    <img src="../static/images/twitter.png" alt="Twitter" />
+    </a>
+    <a href="javascript:;" onclick="window.print()">
+    <img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" />
+    </a>
+    <a href="https://github.com/ggetchell" target="_self">
+    <img src="../static/images/github.png" alt="GitHub" /></a>   
+    <a href="https://www.meetup.com" target="_blank">
+    <img src="../static/images/meetup.png" alt="Meetup" />
+    </a>
+    </div>
+    </div>  
+    </div>
+    {% include 'partials/nav-barportfolio.html' %}
+    {% endblock %}
+</body>
+</html>

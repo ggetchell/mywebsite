@@ -1,0 +1,22 @@
+{% load static %}
+
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar">
+                <i class="fa fa-bars" aria-hidden="true"></i>  
+            </button>
+            <span class="navbar-brand">Gregory Getchell</span>
+          </div>
+          <div class="collapse navbar-collapse" id="top-navbar">
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li class="active"><a href="{% url 'portfolio' %}">Portfolio</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+          <li><a href="../static/images/GregsProfessionalResume2017new.pdf" target="_blank">Resume</a></li>
+          <li><a href="http://ggetchell.com/wordpress" target="_blank">Blog</a></li>
+          </ul>
+        </div>
+       </div>
+</nav>

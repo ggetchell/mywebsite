@@ -1,0 +1,150 @@
+html {
+  height: 100%;
+}
+
+body {
+    background: url(../images/starry_sky_night_space_stars_116783_1920x1080.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding: 10px;
+    padding-bottom: 100%;
+	font-family: source-sans-pro, 'Tangerine', Sofia, Amita;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1em;
+    width: 100%;
+    min-height: 100%;
+}
+ 
+nav.navbar.navbar-default {
+    background: rgba(0,0,0,0.7);
+    border: none !important;
+    min-height: 40px;
+}
+
+span.navbar-brand {
+    color: #FFDEAD !important;
+    font-size: 5em !important;
+    font-family: sofia;
+    font-weight: bold !important;
+}
+
+.navbar-nav>li>a {
+    padding: 10px;
+    color: #FFDEAD !important;
+    text-shadow: 2px 2px 8px #000;
+    font-size: 28px !important;
+    font-family: Tangerine;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+.navbar-nav>li>a, .navbar-brand {
+    padding-top:10px !important; 
+    padding-bottom:0 !important;
+    height: 40px;
+}
+nav.navbar {
+    min-height: 40px !important;
+    padding-top: 5px;
+}
+
+a:visited {
+    background: #778899 !important;
+}
+
+
+a:hover {
+    background: aqua !important;
+}
+
+a:active {
+    background: brown !important;
+}
+
+div h1 {
+  margin-top: 300px;
+  text-align: center;
+  font-size: 8em;
+  font-family: Amita;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-shadow: 2px 2px 8px #000;
+  text-decoration: none;
+  color: #FFDEAD; 
+}
+
+div.header>p {
+    font-size: 3em;
+    color: #FFDEAD;
+    font-weight: bold;
+    text-align: center;
+    font-family: cursive;
+    padding: 30px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  div h1 {
+    font-size: 4em;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 140px; 
+    }
+    
+    div.header>p {
+        width: auto;
+        font-size: 24px;
+        font-weight: bold;
+        padding-left: 50px;
+        padding-right: 50px;
+        word-spacing: break-word;
+        
+    }
+    .footer {
+        height: 70px;
+    }
+     
+    div#share-buttons.pull-center a {
+        display: inline-block;
+    }
+    
+    nav.navbar.navbar-default {
+        position: fixed;
+        top: auto;
+    }
+    
+    nav.navbar-fixed-top {
+        position: fixed;
+    }
+    
+    
+    span.navbar-brand {
+        font-size: 3em !important;
+        min-height: 20px !important;
+    }
+}
+
+div.footer small {
+    font-size: 16px;
+    color: white;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  height: 70px;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+    
+#share-buttons img {
+width: 35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}

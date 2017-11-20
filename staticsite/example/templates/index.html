@@ -1,0 +1,49 @@
+{% extends 'basehome.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+		<TITLE>My Portfolio Web Site Site</title>
+		<meta name="description" content="My second Web Site: Created from Capella Course">
+	<meta name="author"	content="Gregory Getchell">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+	<body>   
+        {% block pagecontent %}
+    <div class="header">
+    <h1>Welcome To My Web Site</h1>
+        <p>An enthusiastic Self-Taught web developer with a passion for creating dynamic, Responsive, Mobile Friendly Websites. <br />This is my 2nd web site, i have revised this one 7 times, making major changes along the way. This site was part of my Capella University Moblie Friendly Web Dev program.</p>
+     </div> 
+        
+<div class="footer">
+<small>&copy; 2016 by Gregory Getchell all rights reserved</small>
+    <div id="share-buttons" class="pull-center"> 
+    <a href="http://www.linkedin.com/in/greg-getchell-a133217" target="_blank">
+        <img src="../static/images/linkedin.png" alt="LinkedIn" />
+    </a>
+    <a href="https://plus.google.com/u/0/115066865000810445323" target="_blank">
+        <img src="../static/images/googleplus.png" alt="Google" />
+    </a>
+       
+    <a href="http://www.facebook.com/gregory.getchell" target="_blank">
+    <img src="../static/images/facebook500.png" alt="Facebook" />
+    </a>
+    <a href="https://twitter.com/ggetchell4" target="_blank">
+    <img alt="Twitter" src="../static/images/twitter.png" />
+    </a>
+    <a href="javascript:;" onclick="window.print()">
+    <img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" />
+    </a>
+    <a href="https://github.com/ggetchell" target="_self">
+    <img src="../static/images/github.png" alt="GitHub" /></a>   
+    <a href="https://www.meetup.com" target="_blank">
+    <img src="../static/images/meetup.png" alt="Meetup" />
+    </a>
+    </div>
+   </div>
+        {% include 'partials/nav-barhome.html' %}
+        {% endblock %}
+</body>
+</html>

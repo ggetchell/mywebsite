@@ -1,0 +1,125 @@
+{% extends 'basecontact.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+		<TITLE>My Portfolio Web Site</title>
+		<meta name="description" content="My second Web Page: Created from Capella Course">
+	<meta name="author"	content="Gregory Getchell">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+<body>
+    {% block pagecontent %}
+    <div class="header">
+    <h1>Contact Me</h1>
+        </div>
+<div>
+<h3>Feel free to contact me with questions, comments, critiques. <br> Use the form below</br></h3> 
+    </div>
+<div class="contact-form">
+<form style="margin-left: 10px;" action="http://www.SnapHost.com/captcha/WebFormSubmit.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);">
+<input id="SnapHostID" name="SnapHostID" type="hidden" value="RGYBKX42K9AA" />
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.FirstName.value == "") {alert('First name is required.');frm.FirstName.focus();return false;}
+if (frm.LastName.value == "") {alert('Last name is required.');frm.LastName.focus();return false;}
+if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
+if (frm.Comments.value == "") {alert('Please enter comments or questions.');frm.Comments.focus();return false;}
+if (frm.CaptchaCode.value == "") {alert('Enter web form code.');frm.CaptchaCode.focus();return false;}
+return true; }
+function ReloadCaptchaImage(captchaImageId) {
+var obj = document.getElementById(captchaImageId);
+var src = obj.src;
+var date = new Date();
+var pos = src.indexOf('&rad=');
+if (pos >= 0) { src = src.substr(0, pos); }
+obj.src = src + '&rad=' + date.getTime();
+return false; }
+</script>
+
+<table border="0" cellpadding="5" cellspacing="0" width="520">
+<tr><td style="width:50%; color: white;">First name*:<br />
+<input id="FirstName" name="FirstName" type="text" maxlength="60" style="width:240px; border:2px solid #009900; box-shadow: 3px 6px 3px #000" /></td>
+<td style="width:50%; color: white;">Last name*:<br />
+<input id="LastName" name="LastName" type="text" maxlength="60" style="width:240px; border:2px solid #009900; box-shadow: 3px 6px 3px #000" /></td>
+</tr><tr>
+<td style="color: white;">Email address*:<br />
+<input id="FromEmailAddress" name="FromEmailAddress" type="text" maxlength="60" style="width:240px; border:2px solid #009900; box-shadow: 3px 6px 3px #000" /></td>
+<td>&nbsp;</td>
+</tr><tr>
+<td style="color: white;">Work phone number:<br />
+<input id="WorkPhoneNumber" name="WorkPhoneNumber" type="text" maxlength="60" style="width:240px; border:2px solid #009900; box-shadow: 3px 6px 3px #000" /></td>
+<td style="color: white;">Fax number:<br />
+<input id="FaxNumber" name="FaxNumber" type="text" maxlength="60" style="width:240px; border:2px solid #009900; box-shadow: 3px 6px 3px #000" /></td>
+</tr><tr>
+<td style="color: white;">Home phone number:<br />
+<input id="HomePhoneNumber" name="HomePhoneNumber" type="text" maxlength="60" style="width:240px; border:2px solid #009900; box-shadow: 3px 6px 3px #000" /></td>
+<td style="color: white;">Mobile phone number:<br />
+<input id="MobilePhoneNumber" name="MobilePhoneNumber" type="text" maxlength="60" style="width:240px; border:2px solid #009900; box-shadow: 3px 6px 3px #000" /></td>
+</tr><tr>
+<td colspan="2" style="color: white;">Address:<br />
+<input id="Address" name="Address" type="text" maxlength="250" style="width:500px; border:2px solid #009900; box-shadow: 3px 6px 3px #000" /></td>
+</tr><tr>
+<td style="color: white;">City:<br />
+<input id="City" name="City" type="text" maxlength="60" style="width:240px; border:2px solid #009900; box-shadow: 3px 6px 3px #000" /></td>
+<td style="color: white;">State / Province / Region:<br />
+<input id="State" name="State" type="text" maxlength="60" style="width:240px; border:2px solid #009900; box-shadow: 3px 6px 3px #000" /></td>
+</tr><tr>
+<td style="color: white;">Country:<br />
+<input id="Country" name="Country" type="text" maxlength="60" style="width:240px; border:2px solid #009900; box-shadow: 3px 6px 3px #000" /></td>
+<td style="color: white;">ZIP / Postal code:<br />
+<input id="Zip" name="Zip" type="text" maxlength="60" style="width:240px; border:2px solid #009900; box-shadow: 3px 6px 3px #000" /></td>
+</tr><tr>
+<td colspan="2" style="color:white;">Comments and questions*:<br />
+<textarea name="Comments" id="Comments" rows="7" cols="40" style="width:500px; border:2px solid #009900; box-shadow: 3px 6px 3px #000"></textarea></td>
+</tr><tr>
+<td colspan="2" align="center"> <br />
+<table border="0" cellpadding="0" cellspacing="0">
+<tr valign="top">
+<td> <i style="color: white;">Enter web form code*:</i>
+<input id="CaptchaCode" name="CaptchaCode" type="text" style="width:80px; border:2px solid #999999; box-shadow: 3px 6px 3px #000" maxlength="6" />
+</td><td>
+<a href="http://www.SnapHost.com"><img id="CaptchaImage" alt="Web Form Code" title="Anti-spam web forms"
+style="margin-left:20px; border:2px solid #999999; box-shadow: 3px 6px 3px #000;"
+src="http://www.SnapHost.com/captcha/WebForm.aspx?id=RGYBKX42K9AA&ImgType=2" /></a><br />
+<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:18px; color: white;">reload image</span></a> </td></tr>
+</table> <br />
+    * - required fields. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input style="border 2px solid #999999; box-shadow: 3px 6px 3px #000" id="skip_Submit" name="skip_Submit" type="submit" value="Submit" />
+</td></tr>
+</table><br />
+</form>
+</div>
+    </div>
+<div class="footer">
+<small>&copy; 2016 by Gregory Getchell all rights reserved</small>
+    <div id="share-buttons" class="pull-center"> 
+    <a href="http://www.linkedin.com/in/greg-getchell-a133217" target="_blank">
+        <img src="../static/images/linkedin.png" alt="LinkedIn" />
+    </a>
+    <a href="https://plus.google.com/u/0/115066865000810445323" target="_blank">
+        <img src="../static/images/googleplus.png" alt="Google" />
+    </a>
+       
+    <a href="http://www.facebook.com/gregory.getchell" target="_blank">
+    <img src="../static/images/facebook500.png" alt="Facebook" />
+    </a>
+    <a href="https://twitter.com/ggetchell4" target="_blank">
+    <img src="../static/images/twitter.png" alt="Twitter" />
+    </a>
+    <a href="javascript:;" onclick="window.print()">
+    <img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" />
+    </a>
+    <a href="https://github.com/ggetchell" target="_self">
+    <img src="../static/images/github.png" alt="GitHub" /></a>   
+    <a href="https://www.meetup.com" target="_blank">
+    <img src="../static/images/meetup.png" alt="Meetup" />
+    </a>
+    </div>
+    </div>
+    {% include 'partials/nav-barcontact.html' %}
+    {% endblock %}
+</body>
+</html>
